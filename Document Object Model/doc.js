@@ -24,7 +24,34 @@ console.dir(tagname);
 // query selector
 
 // one(first) element
-let q = document.querySelector("p");
+let q = document.querySelector("p"); // for id we have to use # and class .
 console.log(q);
 let q2 = document.querySelectorAll("p");
 console.log(q2);
+
+console.dir(document.body.firstChild);
+
+// 
+let qr = document.querySelector("div").children;
+console.log(qr);
+
+let query = document.querySelector(".div");
+console.log(query.innerText);
+console.log(query.innerHTML);
+query.innerHTML = "abcd"; // set innertext
+
+let hh5 = document.querySelector("h5");
+console.log(hh5.innerText);
+console.log(hh5.textContent);
+
+//q2
+
+let text = document.querySelector("h2");
+text.innerText = text.innerText+" from apna college students";
+console.log(text.innerText);
+
+//q3
+let divs = document.querySelectorAll(".box");
+divs[0].innerText = "Div 1" // we can access all like an array
+divs[1].innerText = "Div 1"
+divs[2].innerText = "Div 1"
