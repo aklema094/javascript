@@ -106,6 +106,7 @@ let resSum = numArr.reduce((pre,curr) => {
 });
 console.log("Sum is : ",resSum);
 let fact = numArr.reduce((pre,curr) => {
+    console.log(pre ," : ",curr);
     return pre * curr;
 });
 console.log("Factorial is : ",fact);

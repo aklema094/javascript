@@ -32,6 +32,7 @@ console.log(q2);
 console.dir(document.body.firstChild);
 
 // 
+console.log("this is children")
 let qr = document.querySelector("div").children;
 console.log(qr);
 
@@ -53,5 +54,6 @@ console.log(text.innerText);
 //q3
 let divs = document.querySelectorAll(".box");
 divs[0].innerText = "Div 1" // we can access all like an array
-divs[1].innerText = "Div 1"
-divs[2].innerText = "Div 1"
+divs[1].innerText = "Div 2"
+divs[2].innerText = "Div 3"
+console.log(divs[0].innerText);
