@@ -50,5 +50,30 @@ let car2 = new Car();
 car2.color = "green";
 console.log(car2.color);
 
+// inheritance
 
+class Person{
+    constructor(name){
+        console.log("parent constructor");
+        console.log(name);
+    }
+    eat(){
+        console.log("can eat")
+    }
+    work(){
+        console.log("do something!!");
+    }
+}
+class Engeneer extends Person{
+    constructor(name){
+        super(name);
+        console.log("child constructor");
+    }
+    work(){
+        console.log("Build something");
+    }
+}
+let eng = new Engeneer("Akhi");
+eng.eat();
+eng.work();
 
