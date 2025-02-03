@@ -76,4 +76,42 @@ class Engeneer extends Person{
 let eng = new Engeneer("Akhi");
 eng.eat();
 eng.work();
+// qs
+let data = "secret information";
+class User{
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
+    }
+     viewData(){
+        console.log("Data : ",data);
+     }
+}
+let stu = new User("Aklema","aklema@gmail.com");
+class Admin extends User{
+    constructor(name,email){
+        super(name,email);
 
+    }
+    editData(){
+      data = "new Edited data";
+    }
+}
+let admin = new Admin("admin","admin@gmail.com");
+admin.viewData();
+console.log(admin);
+
+// error handelling
+
+let a = 5;
+let b = 6;
+
+console.log("A + B",(a+b));
+console.log("A - B",(a-b));
+try{
+    console.log("A / B",(a/c));
+}catch(err){
+    console.log(err);
+}
+console.log("A % B",(a%b));
+console.log("A * B",(a*b));
