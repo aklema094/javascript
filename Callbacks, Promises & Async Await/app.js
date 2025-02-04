@@ -32,4 +32,13 @@ getData(1,()=>{
         getData(3);
     });
 });
+// promise
+let promise = new Promise((resolve,reject)=>{
+   
+    console.log("I am a promise");
+    
+    resolve("success");
+});
+console.log(promise);
+
 
