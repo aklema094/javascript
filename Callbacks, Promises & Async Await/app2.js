@@ -2,9 +2,9 @@
 function getData(id){
 return new Promise((resolve,reject) => {
   setTimeout(()=>{
-    console.log("data",1);
+    console.log("data",id);
     resolve("success");
-  },5000)
+  },1000)
 });
 }
 
@@ -28,3 +28,27 @@ pro.catch((error)=>{
     console.log(error);
 });
 
+getData(1).then((res)=>{
+    return getData(2);
+}).then((res)=>{
+   return getData(3);
+}).then((res) =>{
+    console.log(res);
+});
+
+// async await
+
+async function getalldata() {
+    await getData(4);
+    await getData(5);
+    await getData(6);
+    await getData(7);
+    await getData(8);
+    
+}
+getalldata();
+(async function() {
+    await getData(9);
+    await getData(10);
+    await getData(11);   
+})(); 
