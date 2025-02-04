@@ -14,3 +14,22 @@ function calculator(a,b, sumCallBack){
     sumCallBack(a,b);
 }
 calculator(10,5,sum);
+
+//call back hell
+
+function getData(data, getNextData){
+    
+    setTimeout(()=>{
+     console.log("data",data);
+   if(getNextData){
+    getNextData();
+   }
+    },2000)
+}
+
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3);
+    });
+});
+
