@@ -29,3 +29,27 @@ for( let i = 1; i<=10; i++){
     fact *= i;
 }
 console.log("10! is : ", fact);
+
+// calculate number greater then 10 and less then 30
+sum =0;
+for( let i = 11; i<30; i++){
+    sum += i;
+}
+console.log("Sum is : ", sum);
+
+let fahrenheit = (calcius) =>{
+    return (calcius * (9/5)) + 32;
+}
+console.log("fahrenheit : ",fahrenheit(5));
+
+let calcius = (fahrenheit) =>{
+    return (fahrenheit - 32) * (5/9);
+}
+console.log("calcius : ",calcius(41));
+// Calculate the sum of numbers in an array of numbers
+let arr = [11,23,45,67,89,45,36,78];
+sum =0;
+for( let i = 0; i<arr.length; i++){
+    sum += arr[i];
+}
+console.log("Sum of array is : ", sum);
