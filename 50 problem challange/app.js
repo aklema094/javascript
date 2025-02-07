@@ -75,5 +75,27 @@ const maximum = array.reduce((pre,curr) =>{
 
 console.log(maximum);
 
+//Print the first 10 Fibonacci numbers without recursion
+ let fibo = [0,1];
+ let fib = 1;
+ for (let index = 2; index < 10; index++) {
+    fib +=index;
+    fibo.push(fib);
+ }
+ console.log(fibo);
+//create a function that will find the nth Fibonacci number using recursion
+
+let n = parseInt(prompt("Enter a number"));
+let Fibon = [0,1];
+let fi = 1;
+const getFibo = () =>{
+    for(let i = 2; i< n ; i++ ){
+       fi += i;
+       Fibon.push(fi);
+    }
+}
+getFibo();
+console.log(Fibon); 
+
 
 
