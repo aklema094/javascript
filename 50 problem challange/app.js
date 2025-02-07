@@ -65,6 +65,15 @@ const newArr = array.filter((val) =>{
 
 console.log(array);
 console.log(newArr);
+// Find the maximum number in an array of numbers
+
+const maximum = array.reduce((pre,curr) =>{
+
+    return pre>curr? pre : curr;
+
+});
+
+console.log(maximum);
 
 
 
