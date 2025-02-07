@@ -53,3 +53,18 @@ for( let i = 0; i<arr.length; i++){
     sum += arr[i];
 }
 console.log("Sum of array is : ", sum);
+console.log("avg of arr is : ",sum/arr.length);
+//Create a function that receives an array of numbers as argument and returns an array containing only the positive numbers
+
+let array = [-1,5,-7,8,9,0,4,5,6,-2];
+
+const newArr = array.filter((val) =>{
+     
+    return val>-1;
+});
+
+console.log(array);
+console.log(newArr);
+
+
+
