@@ -96,6 +96,22 @@ const getFibo = () =>{
 }
 getFibo();
 console.log(Fibon); 
+//create a function that will return a Boolean specifying if a number is prime
+
+let isPrime = (number) =>{
+
+    if (number < 2) return false;
+    if(number == 2) return true;
+
+    for(let i =2 ; i< number; i++){
+
+        if(number % 2 == 0){
+          return false;
+        }
+    }
+    return true;
+}
+isPrime(3);
 
 
 
