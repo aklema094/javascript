@@ -126,6 +126,16 @@ function sumDigits(n){
 }
 
 sumDigits(123);
+// Rotate an array to the left 1 position
+
+let rotate = [4,5,6];
+rotateArray(rotate);
+
+function rotateArray(arr){
+    let pos = rotate.shift();
+    rotate.push(pos);
+}
+console.log(rotate);
 
 
 
