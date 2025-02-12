@@ -136,6 +136,15 @@ function rotateArray(arr){
     rotate.push(pos);
 }
 console.log(rotate);
+//Reverse an array
 
+function rever(){
+
+    for(let j = rotate.length - 1;  j >= 0; j--){
+       rotate.push(rotate[i]);
+    }
+
+}
+console.log(rotate);
 
 
