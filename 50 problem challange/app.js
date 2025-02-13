@@ -146,5 +146,15 @@ function rever(){
 
 }
 console.log(rotate);
+// Reverse a string
 
 
+function revers(s){
+
+    for(let j = rotate.length - 1;  j >= 0; j--){
+        s += s[i];
+
+    }
+
+}
+console.log(revers("javascript"));
