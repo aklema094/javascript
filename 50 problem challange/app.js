@@ -152,9 +152,28 @@ console.log(rotate);
 function revers(s){
 
     for(let j = rotate.length - 1;  j >= 0; j--){
-        s += s[i];
+        s += s[j];
 
     }
 
 }
 console.log(revers("javascript"));
+
+//  Create a function that will return the number of words in a text
+
+let words = 0;
+
+let noOfWords = (txt)=>{
+   
+    let separators = [" ","\t","\n","\r",",",";",".","!","?"];
+    
+    for(let c of txt){
+        if(!separators.includes(c)){
+            words++;
+        }
+    }
+
+  return words;
+};
+
+console.log(`No of words : ${noOfWords("java script language")}`);
