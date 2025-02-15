@@ -177,3 +177,14 @@ let noOfWords = (txt)=>{
 };
 
 console.log(`No of words : ${noOfWords("java script language")}`);
+
+// a function that will return avarage of an array
+
+let avgr = 0;
+
+for(let k = 0; k<rotate.length(); k++){
+
+    avgr+= rotate[k];
+}
+
+console.log("Avarage : ",avgr);
