@@ -83,6 +83,7 @@ console.log(maximum);
     fibo.push(fib);
  }
  console.log(fibo);
+
 //create a function that will find the nth Fibonacci number using recursion
 
 let n = parseInt(prompt("Enter a number"));
@@ -95,9 +96,9 @@ const getFibo = () =>{
     }
 }
 getFibo();
-console.log(Fibon); 
-//create a function that will return a Boolean specifying if a number is prime
+console.log(Fibon);
 
+//create a function that will return a Boolean specifying if a number is prime
 let isPrime = (number) =>{
 
     if (number < 2) return false;
@@ -126,8 +127,8 @@ function sumDigits(n){
 }
 
 sumDigits(123);
-// Rotate an array to the left 1 position
 
+// Rotate an array to the left 1 position.
 let rotate = [4,5,6];
 rotateArray(rotate);
 
@@ -147,44 +148,35 @@ function rever(){
 }
 console.log(rotate);
 // Reverse a string
-
-
 function revers(s){
-
     for(let j = rotate.length - 1;  j >= 0; j--){
         s += s[j];
-
     }
-
 }
 console.log(revers("javascript"));
 
 //  Create a function that will return the number of words in a text
-
 let words = 0;
-
-let noOfWords = (txt)=>{
-   
+let noOfWords = (txt)=>{ 
     let separators = [" ","\t","\n","\r",",",";",".","!","?"];
-    
     for(let c of txt){
         if(!separators.includes(c)){
             words++;
         }
     }
-
   return words;
 };
-
 console.log(`No of words : ${noOfWords("java script language")}`);
 
-// a function that will return avarage of an array
 
+// a function that will return avarage of an array.
 let avgr = 0;
-
 for(let k = 0; k<rotate.length(); k++){
 
     avgr+= rotate[k];
 }
-
 console.log("Avarage : ",avgr);
+// print num 0 to 99
+for(let k = 0; k<100; k++){
+   console.log(k);
+}
