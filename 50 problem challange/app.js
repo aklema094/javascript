@@ -180,3 +180,15 @@ console.log("Avarage : ",avgr);
 for(let k = 0; k<100; k++){
    console.log(k);
 }
+
+// create a function that will merge two arrays and return the result as a new array.
+
+function mergeArrays(arr1, arr2) {
+    return [...arr1, ...arr2];
+}
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = mergeArrays(array1, array2);
+
+console.log(mergedArray); 
