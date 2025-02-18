@@ -171,7 +171,7 @@ console.log(`No of words : ${noOfWords("java script language")}`);
 
 // a function that will return avarage of an array.
 let avgr = 0;
-for(let k = 0; k<rotate.length(); k++){
+for(let k = 0; k<rotate.length; k++){
 
     avgr+= rotate[k];
 }
@@ -192,3 +192,10 @@ const array2 = [4, 5, 6];
 const mergedArray = mergeArrays(array1, array2);
 
 console.log(mergedArray); 
+
+
+// print 7 multiplication table
+
+for(let i =1; i<=10;i++){
+    console.log(`7 X ${i} = ${7*i}`);
+}
