@@ -212,3 +212,7 @@ for(let i =1; i<=100;i++){
       console.log(i);
     }
 }
+// print i*2.
+for(let i =1; i<=50;i++){  
+    console.log(i*2);
+}
