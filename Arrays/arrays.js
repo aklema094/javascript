@@ -66,6 +66,9 @@ console.log(companies);
 companies.push("google");
 companies.push("Facebook");
 console.log(companies);
+companies.push("HTM");
+companies.push("HLI");
+console.log(companies);
 
 
 
