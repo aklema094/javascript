@@ -70,5 +70,6 @@ companies.push("HTM");
 companies.push("HLI");
 console.log(companies);
 
-
+let str = "Hello World Welcome to JavaScript";
+console.log(str.split(" "));
 
