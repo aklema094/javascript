@@ -73,3 +73,8 @@ console.log(companies);
 let str = "Hello World Welcome to JavaScript";
 console.log(str.split(" "));
 
+let arr = [1,2,3];
+
+
+
+

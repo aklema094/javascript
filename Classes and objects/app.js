@@ -115,3 +115,7 @@ try{
 }
 console.log("A % B",(a%b));
 console.log("A * B",(a*b));
+
+
+let arr = ["apple","mango","banana"];
+console.log(arr);
